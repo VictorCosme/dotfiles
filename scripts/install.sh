@@ -1,11 +1,12 @@
 #!bin/bash
 
+PACKAGES="git tmux vim stow tree"
 
 # Instala os pacotes essenciais usando o gerenciador DNF ou APT
 if [ -x "$(command -v dnf)" ]; then
-  sudo dnf install -y "$(cat packages.txt)"
+  sudo dnf update && sudo dnf install -y $PACKAGES
 elif [ -x "$(command -v apt)" ]; then
-  sudo apt install -y "$(cat packages.txt)"
+  sudo apt update && sudo apt install -y $PACKAGES
 fi
 
 # Cria os links simbólicos na pasta home
