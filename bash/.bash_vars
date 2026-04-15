@@ -1,0 +1,21 @@
+# Idioma
+export LANG=pt.BR.UTF-8
+
+# Editor padrão
+export EDITOR=vim
+export VISUAL=vim
+
+# Pager
+export PAGER=less
+
+# Terminal
+export TERM=xterm-256color
+
+# Histórico
+export HISTSIZE=10000
+export HISTFILESIZE=20000
+export HISTCONTROL=ignoreboth
+
+
+# Aparência do prompt
+export PS1='\[\e[32m\]\u at \h\[\e[0m\] in \[\e[34m\]\w\[\e[0m\]\$ '
