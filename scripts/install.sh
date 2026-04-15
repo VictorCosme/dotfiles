@@ -10,4 +10,4 @@ elif [ -x "$(command -v apt)" ]; then
 fi
 
 # Cria os links simbólicos na pasta home
-stow bash git tmux
+stow -R bash git tmux
