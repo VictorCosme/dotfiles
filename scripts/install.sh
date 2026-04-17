@@ -1,6 +1,6 @@
 #!bin/bash
 
-PACKAGES="git tmux vim stow tree"
+PACKAGES="git tmux vim stow tree btop"
 
 # Instala os pacotes essenciais usando o gerenciador DNF ou APT
 if [ -x "$(command -v dnf)" ]; then
